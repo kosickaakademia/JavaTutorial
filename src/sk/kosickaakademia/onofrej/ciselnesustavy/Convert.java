@@ -14,6 +14,20 @@ public class Convert {
         return result;
     }
 
+    public int convertBinaryToDecimal(int value){
+        if(value<=0)
+            return 0;
+        int i=0;
+        int result=0;
+       while(value>0){
+           int last=value%10;
+           result = result+last*(int)Math.pow(2,i);
+           value=value/10;
+           i++;
+;       }
+        return result;
+    }
+
     public String convertDecimalToOctal(int value){
         if(value<=0)
             return "0";
