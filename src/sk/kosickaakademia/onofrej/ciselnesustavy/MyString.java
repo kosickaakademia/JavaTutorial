@@ -14,4 +14,18 @@ public class MyString {
         String result= String.valueOf(pole);
         return result;
     }
+
+    public int getCountOfVowels(String text){
+        int count=0;
+        text = text.toLowerCase();
+        int len=text.length();
+        int i;
+        for(i=0;i<len;i++){
+            char z=text.charAt(i);
+            if(z=='a'  || z=='e' || z=='o' || z=='u' || z=='i' || z=='y' )
+                count++;
+        }
+        return count;
+    }
+
 }

@@ -157,4 +157,22 @@ public class Convert {
         }
         return result;
     }
+
+    public boolean isHexadecimalNumber(String value){
+        // "1254" true
+        // "E8" true
+        // "T15" false
+        // "ae4d" true
+        // "14d!" false
+        return false;
+    }
+
+    public boolean isBinaryNumber(String value){
+        return false;
+    }
+    public boolean isOctalNumber(String value){
+        //"8125" false
+        // 7777777777777777777000777  true
+        return false;
+    }
 }

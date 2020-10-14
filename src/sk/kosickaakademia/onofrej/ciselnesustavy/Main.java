@@ -34,6 +34,11 @@ public class Main {
 
         int v=convert.convertHexadecimalToDecimal("A5E8");
         System.out.println(v);
+
+        String data =" Procedural programming is about writing procedures or methods that perform" +
+                " operations on the data, while object-oriented programming is about crEating objects" +
+                " that contain both data and methods. " ;
+        System.out.println(ms.getCountOfVowels(data));
     }
 
 
