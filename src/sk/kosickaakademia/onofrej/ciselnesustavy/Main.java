@@ -27,6 +27,13 @@ public class Main {
 
         }
         System.out.println("Result: "+result);
+
+        MyString ms=new MyString();
+        String reverse = ms.reverse("VENtiLAtoR");
+        System.out.println(reverse);
+
+        int v=convert.convertHexadecimalToDecimal("A5E8");
+        System.out.println(v);
     }
 
 
