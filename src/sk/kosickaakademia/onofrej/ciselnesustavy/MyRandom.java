@@ -35,4 +35,31 @@ public class MyRandom {
         // vysledok 8 z 10 correct, 80 %
         // DU ->GIT
     }
+
+    public int pocetOdrazov(double height, double koef){
+        int count=0;
+        while(height>=100){
+            count++;
+            height=height*koef;
+        }
+        return count;
+    }
+
+    public void fraction(){
+        int c=80;
+        int m=24;
+        int i = 2;
+        while(c>i && m>i){
+            if(c%i==0 && m%i==0){
+                c=c/i;
+                m=m/i;
+            }
+            else
+                i++;
+        }
+        System.out.println(c+" "+m);
+    }
+
+
+
 }
