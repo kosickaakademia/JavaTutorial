@@ -1,6 +1,7 @@
 package sk.kosickaakademia.onofrej.loteria;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Loteria {
@@ -9,11 +10,15 @@ public class Loteria {
     private final int MAX_VALUE = 20; // rozsah tipovanych cisel , od 1 do MAX_VALUE
     private int[] tip =new int[TIP_LENGTH];
     private int[] zreb=new int[ZREB_LENGTH];
+    private static int time=70;
 
 
     public static void main(String[] args) {
 
+
         Loteria loteria = new Loteria();
+
+
         // 0 vklad
         // metoda nacita kladne cislo (desatinne), doporucenie : do while
         // 1 zadavanie
@@ -44,6 +49,7 @@ public class Loteria {
                 }
             }
         }
+
         System.out.println();
         System.out.println("Result: "+count);
         return count;
@@ -109,5 +115,12 @@ public class Loteria {
                 return false;
         }
         return true;
+    }
+
+    public static void hello(){
+        System.out.println("Hello");
+        time=80;
+        Random rnd=new Random();
+        int c=rnd.nextInt(10);
     }
 }
