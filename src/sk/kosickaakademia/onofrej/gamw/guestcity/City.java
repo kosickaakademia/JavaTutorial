@@ -4,6 +4,9 @@ import java.util.Random;
 
 public class City {
     public String getRandomCity() {
+        int[][] arr = new int[3][5];
+
+
         String[] array = new String[]{"Zvolen", "Bratislava", "Presov", "Poprad",
                 "Michalovce"};
         Random rnd = new Random();
